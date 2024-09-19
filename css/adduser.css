@@ -1,0 +1,422 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  outline: none;
+  box-sizing: border-box;
+  list-style: none;
+  border: none;
+  transition: all 0.4s linear;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+html {
+  font-size: 65%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 2vh;
+}
+::-webkit-scrollbar-track {
+  border: 1px solid black;
+  border-radius: 2rem;
+  box-shadow: inset 0px 0px 2px 1.2px rgb(90, 84, 74);
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 2rem;
+  background: linear-gradient(
+    90deg,
+    rgb(255, 255, 255),
+    rgb(0, 0, 0),
+    rgb(255, 255, 255)
+  );
+  height: 20px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(90deg, rgb(0, 0, 0), rgb(255, 255, 255));
+}
+details{
+  cursor: pointer;display: flex;background-color:rgba(128, 128, 128, 0.52);
+  color: black;
+   position: fixed;left:10px; top:10px;border-radius: 1rem;
+   padding: 5px 30px;
+   
+  
+  }
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  position: relative;
+  height: 70px;
+
+  height: fit-content;
+  flex-wrap: wrap;
+  width: 100vw;
+
+
+}
+
+
+.bgc {
+  box-shadow: 10px 10px 20px 1px goldenrod;
+}
+
+.header .paren-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 20px;
+}
+
+.header .logo {
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-style: oblique;
+  text-transform: capitalize;
+}
+
+.header span {
+  font-size: 2.8rem;
+  font-weight: bold;
+  font-style: oblique;
+  text-transform: capitalize;
+  word-spacing: 1rem;
+  color: goldenrod;
+  padding-bottom: 30px;
+}
+
+.header .nav a {
+  font-size: 1.5rem;
+  margin: 1rem;
+  color: black;
+  font-family: sans-serif;
+  font-style: italic;
+}
+
+.header .nav a:hover {
+  color: goldenrod;
+}
+
+/* header done all the design */
+
+.big-container {
+  display: flex;
+  justify-content: space-around;
+
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+.parent-img {
+  border-radius: 2rem;
+  width: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.slider{
+  position: relative;
+  width: 200px;
+  height: 200px;
+
+  transform-style:  preserve-3d;
+  animation: rot 30s linear infinite;
+}
+@keyframes rot
+{
+    0%{
+
+        transform: perspective(1000px) rotateY(0deg);
+    }
+    100%{
+        transform: perspective(1000px) rotateY(360deg);
+    }
+}
+.slider div{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transform-origin: center;
+  transform-style: preserve-3d;
+  transform: rotateY(calc(var(--i)*45deg))translateZ(320px);
+  
+
+}
+.slider div img{
+  position: absolute;
+  left: 0;
+  top: 0;
+  object-fit: cover;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  transition: 2s;
+  cursor:grabbing;
+
+}
+.slider div:hover img{
+  transform: translateY(-25px) scale(1.1);
+}
+
+
+
+
+.big-container .parent-form {
+  width: 400px;
+
+  border-radius: 1rem;
+  text-align: center;
+ 
+   height: fit-content;
+   margin-top: 25px;
+  
+
+
+}
+
+
+.parent-form  form {
+  width: 100%;
+  background-color: rgba(224, 219, 219, 0.790);
+  border-radius: 1rem;
+  box-shadow: -2px -2px 20px 2px black;
+  height:fit-content
+}
+.parent-form form h3 {
+  padding: 10px 0px 20px 0px;
+  font-size: 2.5rem;
+  font-style: oblique;
+}
+.parent-form form .box {
+  margin: 4px 0px;
+  padding: 8px 5px ;
+  text-transform: capitalize;
+  width: 60%;
+ background-color: white;
+  border-radius: 1rem;
+  color: black;
+  font-weight: bold;
+
+}
+input::placeholder{
+    color: black;
+    text-transform: capitalize;
+    font-weight: 500;
+   
+}
+.parent-form form .btn {
+  padding: 10px 0px;
+  font-size: 2rem;
+ 
+  border-radius: 1rem;
+  cursor: pointer;
+  color: black;
+  background-color: rgb(184, 181, 181);
+  margin: 40px 0px;
+  width: 60%;
+}
+
+.parent-form form .select{
+    text-transform: capitalize;font-weight: 100;
+    cursor:pointer;
+}
+.parent-form form .btn:hover {
+  color: white;
+  background-color: darkred;
+}
+
+
+
+
+ .parent-form .success{
+  font-size: 2rem;
+  color: black;
+  text-transform: capitalize;
+  font-weight: bold;font-style: oblique;
+  transform:translateY(-20px);
+
+}
+.parent-form .success span{
+  color : black; 
+ display: inline-block;
+margin-top: 10px;
+font-weight: bold;
+font-size: 2rem;
+font-style: oblique;
+
+
+}
+.parent-form .success a{
+  font-size: 500;font-size: 2.5rem;
+  text-transform: lowercase;
+  color: royalblue;
+  border-bottom: 1px solid blue;font-style: oblique;
+
+}
+
+/* verification email */
+.email{
+  color:red;
+  width: 90%;
+  margin: auto ;
+ margin-top: -20px;
+ font-size: 2.5rem;
+ font-weight: bold;
+
+ letter-spacing: 1.5px;
+
+}
+
+/* update confirm password */
+
+
+
+/* show password */
+
+.show{
+  position: absolute;
+  margin-left: -22px;
+  margin-top: 13px;
+  font-size: 1.3rem;
+  color: black;
+ cursor: pointer;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* screen */
+
+@media (max-width: 900px) {
+  nav {
+    display: none;
+  }
+
+}
+@media (max-width: 1200px) {
+  .big-container .parent-form {
+    margin-bottom: 200px;
+   
+  }
+
+  }
+
+
+
+
+
+@media (max-width: 700px) {
+  html {
+    font-size: 60%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+  .big-container .parent-form {
+    margin-bottom: 200px;
+
+
+  }
+
+  details label a{
+    transition: all 1s linear;font-size: 2rem;
+     color: blue;
+     text-decoration: underline;
+   }
+}
+
+@media (max-width: 640px) {
+  html {
+    font-size: 50%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+
+  }
+
+  .big-container .parent-form {
+    width: 350px;
+  
+    border-radius: 1rem;
+    text-align: center;
+   
+     height: fit-content;
+     margin-top: 20px;
+     margin-bottom: 150px;
+    
+   
+  }
+  .paren-logo .logo {
+    font-size: 2rem;
+  }
+  .paren-logo span {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 510px) {
+  nav {
+    display: none;
+  }
+  .paren-logo .logo {
+    font-size: 3.5rem;
+  }
+  .paren-logo span {
+    font-size: 5rem;
+  }
+}
+@media (max-width: 450px) {
+  nav {
+    display: none;
+  }
+  .paren-logo .logo {
+    font-size: 2rem;
+   
+  }
+
+  .paren-logo span {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 300px) {
+
+  .paren-logo .logo {
+    font-size: 1rem;
+  }
+  .paren-logo span {
+    font-size: 2rem;
+  }
+}
+
+
+
+
+
+
+
+

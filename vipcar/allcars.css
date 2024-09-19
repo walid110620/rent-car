@@ -1,0 +1,256 @@
+*, *::before , *::after{
+    padding: 0;margin: 0;outline: none ;
+    box-sizing: border-box;
+    text-decoration: none;
+   
+    
+}
+body{
+  background:linear-gradient(90deg , #AE8625, #f7EF8A , #D2Ac47 , #EDC967);
+
+}
+html{
+    font-size: 65.0%;
+
+}
+
+
+::-webkit-scrollbar {
+    width: 2vh;
+  }
+  ::-webkit-scrollbar-track {
+    border: 1px solid black;
+    border-radius: 2rem;
+    background:linear-gradient(90deg , #fcfaf8, #000000 , #ffffff , #070707);
+
+  }
+  ::-webkit-scrollbar-thumb {
+    border-radius: 2rem;
+    background:linear-gradient(90deg , #070707, #fffffd , #000000 , #ffffff);
+
+   
+    height: 20px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background:linear-gradient(90deg , #0f0f0f, #f8f8f8 , #050505 , #ffffff);
+
+  }
+
+
+  #myInput{
+    position:fixed;
+    top:0;  right:0; left: 0;
+    border:none; 
+  padding:10px 10px;
+  text-align:center;
+  font-weight:bold;
+  font-size:1.5rem;
+  border-bottom-left-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+  background:goldenrod;
+
+  opacity: 0.8;
+  border-bottom: 4px solid white;
+  z-index: 200;
+  color: white;font-size: 2rem;
+  
+  
+  }
+  #myInput::placeholder{
+  color:white;font-size: 2rem;
+  }
+
+  details{
+
+    background:linear-gradient(90deg , #AE8625, #f7EF8A , #D2Ac47 , #EDC967);
+
+    cursor: pointer;
+    display: flex;
+    background:goldenrod;
+    opacity: 0.9;
+    color: black;
+     position: fixed;left:0; top:10%;border-radius: 1rem; 
+     border-bottom: 3px solid wheat;
+     z-index: 100;
+     width: 20%;
+    text-align: center;
+    
+    
+    }
+    summary{
+      list-style-type:disclosure-closed;
+      padding: 10px 20px;
+      font-size: 1.5rem;
+    }
+    details label{
+      margin: 10px;
+      padding: 10px;display: inline-block;
+    }
+    details label a{
+     transition: all 1s linear;
+      color: blue;
+      text-decoration: underline;
+      font-size: 1.5rem;
+    }
+    details label a:visited{
+      color: rgb(162, 7, 162);
+    }
+    details label:hover{
+      transform: scale(1.1);
+    }
+
+
+
+
+table{
+width: 50%;
+background:linear-gradient(90deg , #AE8625, #f7EF8A , #D2Ac47 , #EDC967);
+
+margin: auto;
+margin-top: 10%;
+opacity: 0.9;
+border: none;
+border-radius: 1rem;
+
+}
+table caption{
+    font-size: 2.5rem;
+  
+    font-style: oblique;
+   font-weight:100;
+   background:goldenrod;
+
+    border-radius: 1.5rem; 
+    padding: 10px;
+   border-left: 5px solid gold;
+   border-right: 5px solid gold;
+   width: 80%; margin: auto;
+   margin-bottom: 5%;
+
+
+   }
+
+   table th{
+    padding: 10px 20px;
+  
+   font-weight:bold;
+ font-size: 1.5rem;
+   border: none;
+   }
+ 
+   th input {
+    border: none;
+    padding: 8px 20px;
+    background-color: #fff;
+    color: red;
+    cursor: pointer;
+    transition: all 0.5s linear;
+    border-radius: 0.8rem;
+    opacity: 0.8;
+  }
+  th input.walid {
+    color: blue;
+  }
+  th input:hover:not(.walid) {
+    background-color: red;
+    color: white;
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  th input.walid:hover {
+    background-color: blue;
+    color: white;
+    transform: scale(1.2);
+    opacity: 1;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* screen */
+   @media screen and (max-width:1110px) {
+
+    html{
+        font-size: 50%;
+    
+    }
+
+    table th{
+        padding: 10px 10px;
+       font-size: 2.1rem;font-style: oblique;
+       font-weight:100;
+       border-bottom: 1px solid blue;
+       }
+    
+   }
+
+   @media screen and (max-width:862px) {
+ html{
+  font-size: 40%;
+ }
+   }
+
+
+   @media screen and (max-width:782px) {
+    html{
+      font-size: 30%;
+    }
+    table{
+      width: 30%;
+    }
+
+   }

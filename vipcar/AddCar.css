@@ -1,0 +1,248 @@
+*, *::after,*::before{
+    margin: 0; padding: 0;overflow-x: hidden;
+    box-sizing: border-box;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    outline: none;
+  
+}
+html{
+    font-size: 65.0%;
+}
+
+::-webkit-scrollbar {
+    width: 2vh;
+  }
+  ::-webkit-scrollbar-track {
+    border: 1px solid black;
+    border-radius: 2rem;
+    box-shadow: inset 0px 0px 2px 1.2px rgb(184, 177, 165);
+  }
+  ::-webkit-scrollbar-thumb {
+    border-radius: 2rem;
+    background: linear-gradient(
+      90deg,
+      rgb(2, 2, 2),
+      rgb(247, 246, 245),
+      rgb(0, 0, 0)
+    );
+    height: 20px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(90deg, rgb(0, 0, 0), rgb(255, 255, 255));
+  }
+  body{
+    background:linear-gradient(90deg , #AE8625, #f7EF8A , #D2Ac47 , #EDC967);
+
+  }
+
+
+
+details{
+   cursor: pointer;display: flex;background-color:white;
+ 
+     position: fixed;right:0; top:60px;border-radius: 1rem;
+     z-index: 100;
+    
+    }
+    summary{
+      list-style-type:disclosure-closed;font-size: 2rem;color:black;
+      padding: 5px 20px;
+    }
+    details label{
+      margin: 10px;
+      padding: 10px;display: inline-block;
+    }
+    details label a{
+     transition: all 1s linear;font-size: 1.5rem;
+      color: blue;
+      text-decoration: underline;
+    }
+    details label a:visited{
+     color:rgb(244, 69, 244);
+    }
+    details label:hover{
+      transform: scale(1.1);
+    }
+
+
+
+
+
+.parenttitle{
+  width: 100%;
+
+  
+   padding: 10px 5%;
+   background:goldenrod;
+ 
+    display: flex;justify-content:  space-between;align-items: center;
+    flex-wrap: wrap;
+    color: white;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+.parenttitle h2{
+    font-size: 2rem;
+ 
+    font-style: oblique;
+    word-spacing: 1px;
+    font-weight: bold;
+}
+.containerForm{
+   
+width: 100%;
+padding-top: 33px;
+   
+ 
+  
+   
+   
+   
+}
+.containerForm form{
+    display: flex;justify-content: center;align-items: center;flex-direction: column;
+    gap: 20px;
+    max-width: 350px;
+padding: 72px 5px;
+
+  
+    margin: auto;
+   
+   
+  
+   
+}
+
+.containerForm form input , .box {
+  border: none;
+    border-bottom-style:outset;
+    width: 100%;
+    padding: 10px 5px 8px;
+    font-weight: bold;font-size: 1.5rem;
+    border-radius: 1rem;
+}
+.containerForm form .box{
+  font-weight: 100;
+}
+
+.containerForm form input.btn{
+    padding:10px ;
+    background-color: rgb(0, 0, 255);
+    color: white;width: 50%;
+    border-radius: 1.5rem;
+    margin-bottom: 20px;
+    opacity: 0.7;
+    transition: all 0.3s linear;
+    cursor: pointer;
+    margin-top: 20px;font-style: oblique;
+}
+.containerForm form input.btn:hover{
+    opacity: 1; background-color: red;width: 60%;
+    box-shadow: 10px 10px 50px 1px red;
+    border-bottom: none; transform: translateY(3px);
+}
+.containerForm form input.btn:active{
+    transform: translateY(10px);
+}
+.containerForm form input::placeholder{
+    letter-spacing: 1px;
+  color: black;
+    font-size: 1.3rem;
+    font-style: oblique;
+    font-weight: 100;
+}
+
+input[type="file" i]{
+    cursor: pointer;font-style: oblique;
+   
+}
+ .success{
+    font-size: 2rem;
+    color: black;
+    text-transform: capitalize;
+    font-weight: bold;font-style: oblique;
+    transform:translateY(-20px);
+  
+  
+  }
+ .success span{
+    color : black; 
+   display: inline-block;
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 2rem;
+  font-style: oblique;
+  
+  
+  }
+ .success a{
+    font-size: 500;font-size: 2.5rem;
+    text-transform: lowercase;
+    color: blue;
+    border-bottom: 1px solid blue;font-style: oblique;
+  
+  }
+
+
+
+
+
+@keyframes mymove {
+    0%{
+        border-bottom-left-radius: 3rem;
+        border-bottom-right-radius: 3rem;
+        
+    }
+    50%{
+        border-bottom-left-radius: 7rem;
+        border-bottom-right-radius: 7rem;
+        opacity: 0.5;
+    }
+
+   100%{
+        border-bottom-left-radius: 3rem;
+        border-bottom-right-radius: 3rem;
+    }
+}
+
+
+@media screen and (max-width:535px ) {
+    
+    
+
+    
+  
+  
+details{
+   
+  
+   top:90px;
+     
+     
+     }
+     
+    
+
+
+}
+@media screen and (max-width:270px ) {
+    
+    
+
+    
+  
+  
+    details{
+       
+      
+       top:120px;
+         
+         
+         }
+         
+        
+    
+    
+    }
